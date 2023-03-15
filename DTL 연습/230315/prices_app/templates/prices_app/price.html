@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% if status %}
+    <p>{{ name }} {{nums}}개의 가격은 {{ price }}원 입니다.</p>
+  {% else %}
+    <p>{{ name }}은/는 없어용</p>
+  {% endif %}
+{% endblock content %}
